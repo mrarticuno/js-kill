@@ -1,7 +1,10 @@
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import { environmentRouter } from "../environment";
-import { TRPCQueryProcedure, TRPCMutationProcedure } from "@trpc/server";
-import { DecorateRouterRecord } from "@trpc/server/unstable-core-do-not-import";
+import {
+  type TRPCQueryProcedure,
+  type TRPCMutationProcedure,
+} from "@trpc/server";
+import { type DecorateRouterRecord } from "@trpc/server/unstable-core-do-not-import";
 
 let client: DecorateRouterRecord<{
   get: TRPCQueryProcedure<{

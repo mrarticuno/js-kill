@@ -147,7 +147,7 @@ model Execution {
     Function   Function @relation(fields: [functionId], references: [id])
     functionId Int
 
-    Event   Event @relation(fields: [eventId], references: [id])
+    Event   Event? @relation(fields: [eventId], references: [id])
     eventId Int
 
     // Trigger the execution again
